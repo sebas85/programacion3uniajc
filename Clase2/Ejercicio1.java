@@ -11,6 +11,6 @@ public class Ejercicio1 {
             int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
             // Mostrar los elementos del arreglo
            System.out.println(op.mostrarElementos(a));
-           
+           system.out.printl("La suma de los elementos del arreglo es: +op.sumarElementos(a)")
     }
 }
