@@ -27,5 +27,14 @@ public class OperacionesConArreglos {
         return promedio;
     }
 
-}
 
+
+    public int[]lenaArreglo(int tam){
+    int[] a = new int[tam];
+    for (int i = 0; i < a.length; i++){
+        a[i] = (int) (Math.random() + 100);
+    } 
+    return a;
+    }
+
+}
