@@ -29,12 +29,24 @@ public class OperacionesConArreglos {
 
 
 
-    public int[]lenaArreglo(int tam){
+    public int[]llenaArregloAleatorio(int tam){
     int[] a = new int[tam];
     for (int i = 0; i < a.length; i++){
         a[i] = (int) (Math.random() + 100);
     } 
     return a;
     }
+
+
+
+    public int sumaElementos(int[] n ){
+        int suma = 0;
+        for (int i = 0; i < n.length; i++) {
+            suma += n[i];
+        }
+        return suma;       
+    }
+
+
 
 }
