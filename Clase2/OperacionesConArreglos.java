@@ -184,8 +184,7 @@ public class OperacionesConArreglos {
 
     }
 
-    
-    /*/Ejercicio 7
+        //Ejercicio 7
     public void areglosParesImpares(int[] a) {
 
         List<Integer> pares = new ArrayList<>();  //Crea una nueva lista llamada pares que almacenará números enteros
@@ -205,7 +204,7 @@ public class OperacionesConArreglos {
         System.out.println("Arreglo de números impares:");
         System.out.println(impares);
     }
-    */
+    
 
 
     //Ejercicio 8
@@ -273,22 +272,68 @@ public class OperacionesConArreglos {
         return B;
     }
 
+    //Ejercicio 11
+    public int[][] separarNumeros(int[] A) {
+        ArrayList<Integer> negativos = new ArrayList<>(); //crea las listas que almacenan datos de diferentes tipos
+        ArrayList<Integer> ceros = new ArrayList<>();
+        ArrayList<Integer> positivos = new ArrayList<>();
+
+        // Recorrer el arreglo y clasificar los elementos
+        for (int num : A) {            //Itera a traves de cada uno los elementos de A
+            if (num < 0) {            //comprueba si el valor de num es menor que o 
+                negativos.add(num);   //si es menor que cero,agrega num a la lista negativos
+            } else if (num == 0) {
+                ceros.add(num);
+            } else {
+                positivos.add(num);
+            }
+        }
+        // Convertir listas a arreglos
+        int[] arrNegativos = negativos.stream().mapToInt(i -> i).toArray();   //Crea un "stream" (flujo) de elementos a partir de la lista negativos
+        int[] arrCeros = ceros.stream().mapToInt(i -> i).toArray();           //(mapToInt) Aplica una función de mapeo a cada elemento del stream 
+        int[] arrPositivos = positivos.stream().mapToInt(i -> i).toArray();   //caso, la función i -> i simplemente toma cada elemento i y lo devuelve sin cambios.
+                                                                              //(toArray)Convierte el stream de enteros primitivos en un arreglo de enteros 
+                                                                              
+        // Retornar los tres arreglos en una matriz
+        return new int[][] { arrNegativos, arrCeros, arrPositivos };
+
+
+    }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     
+
     
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+    
 
 
 
@@ -302,10 +347,6 @@ public class OperacionesConArreglos {
 
 
 
-
-
-
-    
 
 
 

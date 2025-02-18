@@ -199,7 +199,7 @@ public class Ejercicio1 {
         
         */
 
-        // Ejercico 10
+        /*/ Ejercico 10
         System.out.print("Ingrese Tamano del arreglo: ");
         int n = sc.nextInt();
 
@@ -220,10 +220,44 @@ public class Ejercicio1 {
          System.out.println("\n----- Resultados -----");
          System.out.println("Arreglo original A: " + Arrays.toString(a));  //Convierte un arreglo (array) llamado B en una representación de cadena (String). 
          System.out.println("Arreglo resultante B: " + Arrays.toString(B));
+        */
+
+
+
+        // Ejercico 11
+
+        // Solicitar el tamaño del arreglo
+        System.out.print("Ingrese la cantidad de elementos del arreglo: ");
+        int n = sc.nextInt();
+        
+        int[] A = new int[n];
+    
+        System.out.println("Ingrese los números del arreglo:");
+        for (int i = 0; i < n; i++) {
+            System.out.print("Número " + (i + 1) + ": ");
+            A[i] = sc.nextInt();
+    
+        }
+
+        // Llamamos al método que separa los elementos
+        int[][] resultado = op.separarNumeros(A);
+
+        // Mostrar resultados
+        System.out.println("\n----- Resultados -----");
+        System.out.println("Arreglo original A: " + Arrays.toString(A));
+        System.out.println("Negativos: " + Arrays.toString(resultado[0]));
+        System.out.println("Ceros: " + Arrays.toString(resultado[1]));
+        System.out.println("Positivos: " + Arrays.toString(resultado[2]));
 
 
 
 
-    }    
 
- }
+
+
+
+
+    
+    }
+    
+}    
