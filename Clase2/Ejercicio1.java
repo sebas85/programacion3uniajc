@@ -3,6 +3,8 @@ package Clase2;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import Clase3.MetodosArreglos;
+
 public class Ejercicio1 {
           
         public static void main(String[] args) {
@@ -223,8 +225,8 @@ public class Ejercicio1 {
         */
 
 
-
-        // Ejercico 11
+        
+        /*/ Ejercico 11
 
         // Solicitar el tamaño del arreglo
         System.out.print("Ingrese la cantidad de elementos del arreglo: ");
@@ -248,9 +250,18 @@ public class Ejercicio1 {
         System.out.println("Negativos: " + Arrays.toString(resultado[0]));
         System.out.println("Ceros: " + Arrays.toString(resultado[1]));
         System.out.println("Positivos: " + Arrays.toString(resultado[2]));
+ 
+       */
 
+       
+        //ejercicio15
+          // Crear el objeto para acceder a la clase MetodosArreglos
+        MetodosArreglos obj = new MetodosArreglos();
 
+        String[] nombres = { "Alan", "Devora", "Miguel", "Sandra", "Diego" };
+        int[] sueldos = { 100, 200, 150, 300, 100 };
 
+        System.out.println(obj.nombresSueldos(nombres, sueldos));
 
 
 
