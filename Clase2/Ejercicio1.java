@@ -147,11 +147,11 @@ public class Ejercicio1 {
         */
 
 
-        //Ejercicio 8
+        /*/Ejercicio 8
 
         int[] n = new int[30]; // Arreglo de 30 números
 
-        /*/ Entrada de datos
+        // Entrada de datos
         System.out.println("Ingrese 30 números enteros:");
         for (int i = 0; i < 30; i++) {
             System.out.print("Número " + (i + 1) + ": ");
@@ -168,16 +168,38 @@ public class Ejercicio1 {
 
 
         System.out.println("\n----- Resultados -----");
-        System.out.println(op.mostrarElementos(n));
         System.out.println("Número mayor: " + mayor + " (se repite " + repeticionesMayor + " veces)");
         System.out.println("Número menor: " + menor + " (se repite " + repeticionesMenor + " veces)");
         
         */
-
+         
         
+        /*/ Ejercico 9
+        // Solicitar tamaño del arreglo
+        System.out.print("Ingrese la cantidad de números en el arreglo: ");
+         int n = sc.nextInt();
+
+        int[] arreglo = new int[n]; // Crear arreglo del tamaño indicado
+
+        // Entrada de datos
+        System.out.println("Ingrese los números del arreglo:");
+        for (int i = 0; i < n; i++) {
+            System.out.print("Número " + (i + 1) + ": ");
+            arreglo[i] = sc.nextInt();
+        }
+
+        // Solicitar número a buscar
+        System.out.print("\nIngrese el número a buscar en el arreglo: ");
+        int numeroBuscado = sc.nextInt();
+ 
+        int aparece = op.vecesNumero(arreglo, numeroBuscado);
+
+        System.out.println("\n----- Resultados -----");
+        System.out.println("El número " + numeroBuscado + " aparece " + aparece + " veces.");
         
+        */
 
-
+        // Ejercico 10
 
 
 

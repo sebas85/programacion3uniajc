@@ -208,7 +208,7 @@ public class OperacionesConArreglos {
     */
 
 
-    //Ejercicio 7
+    //Ejercicio 8
      
      // Método para encontrar el número mayor en el arreglo
         public int encontrarMayor(int[] n) {
@@ -239,6 +239,17 @@ public class OperacionesConArreglos {
         int contador = 0;
         for (int num : n) {
             if (num == valor) {
+                contador++;
+            }
+        }
+        return contador;
+    }
+
+    //Ejercicio 9
+    public int vecesNumero(int[] arreglo, int numero) {
+        int contador = 0;
+        for (int num : arreglo) { // Recorremos el arreglo
+            if (num == numero) { // Comparamos cada número con el buscado
                 contador++;
             }
         }
