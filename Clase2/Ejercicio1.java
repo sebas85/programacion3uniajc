@@ -1,5 +1,6 @@
 package Clase2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ejercicio1 {
@@ -129,7 +130,7 @@ public class Ejercicio1 {
         */
 
 
-       //EJERCICIO 7
+       /*/EJERCICIO 7
 
 
        int[] a = new int[10]; // Arreglo original de 10 elementos
@@ -143,6 +144,40 @@ public class Ejercicio1 {
         }
 
         op.areglosParesImpares(a);
+        */
+
+
+        //Ejercicio 8
+
+        int[] n = new int[30]; // Arreglo de 30 números
+
+        /*/ Entrada de datos
+        System.out.println("Ingrese 30 números enteros:");
+        for (int i = 0; i < 30; i++) {
+            System.out.print("Número " + (i + 1) + ": ");
+            n[i] = sc.nextInt();
+        }
+
+        // Encontrar el mayor y el menor
+        int mayor = op.encontrarMayor(n);
+        int menor = op.encontrarMenor(n);
+
+        // Contar repeticiones
+        int repeticionesMayor = op.contarRepeticiones(n, mayor);
+        int repeticionesMenor = op.contarRepeticiones(n, menor);
+
+
+        System.out.println("\n----- Resultados -----");
+        System.out.println(op.mostrarElementos(n));
+        System.out.println("Número mayor: " + mayor + " (se repite " + repeticionesMayor + " veces)");
+        System.out.println("Número menor: " + menor + " (se repite " + repeticionesMenor + " veces)");
+        
+        */
+
+        
+        
+
+
 
 
 

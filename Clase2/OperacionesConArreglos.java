@@ -185,7 +185,7 @@ public class OperacionesConArreglos {
     }
 
     
-    //Ejercicio 7
+    /*/Ejercicio 7
     public void areglosParesImpares(int[] a) {
 
         List<Integer> pares = new ArrayList<>();  //Crea una nueva lista llamada pares que almacenará números enteros
@@ -199,11 +199,50 @@ public class OperacionesConArreglos {
                 impares.add(num);  // si es falsa agrega num a la lista impares
             }
         }
-        
+
         System.out.println("\nArreglo de números pares:");
         System.out.println(pares);
         System.out.println("Arreglo de números impares:");
         System.out.println(impares);
+    }
+    */
+
+
+    //Ejercicio 7
+     
+     // Método para encontrar el número mayor en el arreglo
+        public int encontrarMayor(int[] n) {
+            int mayor = n[0];      // Suponemos que el primer número es el mayor
+            for (int num : n) {    //Inicia un bucle "for-each" que recorre cada elemento del arreglo n,eEn cada iteración, el valor se asigna a la variable num.
+           
+                if (num > mayor) {  //Compara el valor actual de num con el valor actual de mayor.
+                    mayor = num;
+                }
+            }
+            return mayor;
+        }
+
+     // Método para encontrar el número menor en el arreglo
+        public int encontrarMenor(int[] n) {
+            int menor = n[0];        // Suponemos que el primer número es el menor
+            for (int num : n) {
+                if (num < menor) {
+                    menor = num;
+                }
+            }
+            return menor;
+        }
+
+
+    // Método para contar cuántas veces aparece un número en el arreglo
+    public int contarRepeticiones(int[] n, int valor) {
+        int contador = 0;
+        for (int num : n) {
+            if (num == valor) {
+                contador++;
+            }
+        }
+        return contador;
     }
 
 
@@ -211,6 +250,12 @@ public class OperacionesConArreglos {
 
 
 
+
+
+
+
+
+    
 
 
 
