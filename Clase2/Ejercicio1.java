@@ -37,20 +37,104 @@ public class Ejercicio1 {
           
 
 
-            //EJERCICIO 1
+            /*/EJERCICIO 1
 
-            System.out.println("Por favor digite el tamano del arreglo"); 
-            int n = sc.nextInt();  
+            System.out.print("Por favor digite el tamano del arreglo "); 
+            int n = sc.nextInt();    //Crea el arreglo de acuerdo al numero 
+            int [] numeros = op.llenaArregloAleatorio(n); //llena el arreglo de forma aleatoria
+    
+            System.out.println(op.mostrarElementos(numeros)); // muestra los elementos que se llenaron de forma aleatoria
+            System.out.println("La suma de los elementos es igual a: "+ op.sumaElementos(numeros)); //suma los elementos mostrados anteriormente
 
-            int [] numeros = new int[n]; // se crea el arreglo  y se toma deacuerdo al usuario
+            */
 
+            /*/EJERCICIO 2
+
+            System.out.print("Ingrese el número de empleados: ");
+            int n = sc.nextInt();
+
+            op.NetoAPagarEmpleado(n);
+           
+            */
+
+
+
+            /*/EJERCICIO 3
+        
+            System.out.print("Ingrese Numero del arreglo: "); 
+            int n = sc.nextInt();
+
+            int [] numeros = op.llenaArregloAleatorio(n);
             
+            System.out.println(op.mostrarElementos(numeros)); // muestra los elementos que se llenaron de forma aleatoria
+            
+            System.out.println("Suma de números pares: " + op.sumaPares(numeros));
+            System.out.println("Suma de números impares: " + op.sumaImpares(numeros));
+    
+            */
 
 
+             /*/EJERCICIO 4       
+            System.out.print("Digite Numero de personas del grupo 1:");
+            int e1= sc.nextInt();
+        
+            System.out.print("Digite Numero de personas del grupo 2:");
+            int e2= sc.nextInt();
+  
+            //Arreglo para guardal los las edades
+            int[] edades1 = new int[e1];
+            int[] edades2 = new int[e2];
+
+            System.out.println(op.mostrarElementos(edades1));
+            System.out.println(op.mostrarElementos(edades2));
+        
+
+            // Llenar el primer arreglo
+            System.out.println("Ingrese las edades del primer grupo:");
+            for (int i = 0; i < e1; i++) {
+                System.out.print("Edad " + (i + 1) + ": ");
+                edades1[i] = sc.nextInt();
+            }
 
 
+            // Llenar el segundo arreglo
+            System.out.println("Ingrese las edades del segundo grupo:");
+            for (int i = 0; i < e2; i++) {
+                System.out.print("Edad " + (i + 1) + ": ");
+                edades2[i] = sc.nextInt();
+            }
 
-
+            int mayorEdad = op.encontrarMayor(edades1, edades2);
+            System.out.println("La mayor edad es: " + mayorEdad);
         }
-    }
+     
+        */
+        
+        /*/EJERCICIO 5
+        
+        System.out.print("Digite la Cantidad de productos:");23
+        int n1= sc.nextInt();
+        sc.nextLine();
+        
+        op.productoMayorGasto(n1);
+        */
+    
+        //EJERCICIO 6
 
+        System.out.print("Número de Vivendas: ");
+        int n= sc.nextInt();
+        
+       op.gananciasVivienda(n);
+
+
+
+
+
+
+
+
+
+
+    }    
+
+ }
