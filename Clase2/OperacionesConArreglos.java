@@ -1,4 +1,6 @@
 package Clase2;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class OperacionesConArreglos {
@@ -155,7 +157,7 @@ public class OperacionesConArreglos {
          
     
     
-    //Ejercicio 5
+    //Ejercicio 6
     
     public void gananciasVivienda(int n){
 
@@ -172,19 +174,41 @@ public class OperacionesConArreglos {
            
             ganancias[i] = arquiler[i] * (porcentajes[i]/100); 
             
-
-            System.out.println("    \nResultados    ");
-            for(int i=0 ; i< n ; i++){
-                System.out.println("Vienda " +(i+1)+ "  -Arquiler: $" +arquiler[i]+ " -Ganancias: " +ganancias[i]);  
-            }
-        
-    
-    
         }
- 
 
+
+        System.out.println("    \nResultados    ");
+        for(int i=0 ; i< n ; i++){
+            System.out.println("Vienda " +(i+1)+ "  -Arquiler: $" +arquiler[i]+ " -Ganancias: " +ganancias[i]);  
+        }       
 
     }
+
+    
+    //Ejercicio 7
+    public void areglosParesImpares(int[] a) {
+
+        List<Integer> pares = new ArrayList<>();  //Crea una nueva lista llamada pares que almacenará números enteros
+        List<Integer> impares = new ArrayList<>();
+
+        for (int num : a) {     //itera a través de cada elemento del arreglo p en cada iteración el valor del elemento se asigna a la variable num.
+            
+            if (num % 2 == 0) {
+                pares.add(num);     //Si la condición  anterior es verdadera se agrega num a la lista pares.
+            } else {
+                impares.add(num);  // si es falsa agrega num a la lista impares
+            }
+        }
+        
+        System.out.println("\nArreglo de números pares:");
+        System.out.println(pares);
+        System.out.println("Arreglo de números impares:");
+        System.out.println(impares);
+    }
+
+
+
+
 
 
 

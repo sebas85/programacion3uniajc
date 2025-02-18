@@ -119,16 +119,30 @@ public class Ejercicio1 {
         op.productoMayorGasto(n1);
         */
     
-        //EJERCICIO 6
+        /*/EJERCICIO 6
 
         System.out.print("Número de Vivendas: ");
         int n= sc.nextInt();
         
        op.gananciasVivienda(n);
 
+        */
 
 
+       //EJERCICIO 7
 
+
+       int[] a = new int[10]; // Arreglo original de 10 elementos
+
+       // Entrada de datos
+       System.out.println("Ingrese 10 números:");
+       for (int i = 0; i < 10; i++) {
+           System.out.print("Número " + (i + 1) + ": ");
+           a[i] = sc.nextInt();
+
+        }
+
+        op.areglosParesImpares(a);
 
 
 
