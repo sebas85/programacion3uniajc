@@ -200,8 +200,26 @@ public class Ejercicio1 {
         */
 
         // Ejercico 10
+        System.out.print("Ingrese Tamano del arreglo: ");
+        int n = sc.nextInt();
 
+        int[] a = new int[n]; // Crear el arreglo A
 
+        // Entrada de datos
+        System.out.println("Ingrese los numeros del arreglo:");
+        for (int i = 0; i < n; i++) {
+            System.out.print("Elemento " + (i + 1) + ": ");
+            a[i] = sc.nextInt();
+        }
+
+        // Llamamos al método que genera el nuevo arreglo B
+         
+        int[] B = op.sumarOpuestos(a);
+
+         // Mostrar resultados
+         System.out.println("\n----- Resultados -----");
+         System.out.println("Arreglo original A: " + Arrays.toString(a));  //Convierte un arreglo (array) llamado B en una representación de cadena (String). 
+         System.out.println("Arreglo resultante B: " + Arrays.toString(B));
 
 
 

@@ -256,6 +256,45 @@ public class OperacionesConArreglos {
         return contador;
     }
 
+    //Ejercicio 10
+    public int[] sumarOpuestos(int[] a) {
+        int n = a.length;
+        int nuevoTamaño = (n + 1) / 2; // Tamaño del nuevo arreglo B
+        int[] B = new int[nuevoTamaño];
+
+        for (int i = 0; i < nuevoTamaño; i++) {
+            int opuesto = n - 1 - i; // Índice del elemento opuesto
+            if (i == opuesto) { 
+                B[i] = a[i]; // Si es el centro del arreglo impar, se mantiene
+            } else {
+                B[i] = a[i] + a[opuesto]; // Suma los elementos opuestos
+            }
+        }
+        return B;
+    }
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
 
 
 
@@ -270,4 +309,4 @@ public class OperacionesConArreglos {
 
 
 
-}
+
