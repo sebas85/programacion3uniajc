@@ -1,4 +1,3 @@
-package Clase3;
 public class MetodosArreglos {
 
     public String nombresSueldos(String[] n, int[] s) {
@@ -25,12 +24,5 @@ public class MetodosArreglos {
 
         return cad;
     }
-
-
-    
-
-
-
-
 
  }

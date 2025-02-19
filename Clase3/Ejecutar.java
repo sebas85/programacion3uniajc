@@ -1,5 +1,3 @@
-package Clase3;
-
 public class Ejecutar {
     public static void main(String[] args) {
         // Crear el objeto para acceder a la clase MetodosArreglos
