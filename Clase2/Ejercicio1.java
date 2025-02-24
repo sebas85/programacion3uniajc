@@ -6,8 +6,8 @@ import java.util.Scanner;
 import Clase3.MetodosArreglos;
 
 public class Ejercicio1 {
-          
-        public static void main(String[] args) {
+
+    public static void main(String[] args) {
 
             Scanner sc = new Scanner(System.in);
 
@@ -264,11 +264,107 @@ public class Ejercicio1 {
         System.out.println(obj.nombresSueldos(nombres, sueldos));
 
 
+        /*/ Ejercicio 12: Encontrar las pocisiobes de un numero en un arreglo
+    
+    
+            int[]arreglo = { 4,6,8,2,6,9,6,1};
+            int numeroBuscado=6; // El numero que vamos a buscarm
+            System.out.print("Posiciones: ");
+            for(int i=0;)i< arreglo.length; i++){
+                if(arreglo[i]==numeroBuscado){
+                    System.out.print((i+1)+"");
+                }
+            }
+            */
+    
+            
+        /*/Ejercicio 13: Separar numeros mayores y menores que la media de un arreglo
+    
+        int[]arreglo= {5,8,12,3,7,10};
+        double media=0;
+        for(int numero : arreglo){
+            media += numero;
+        }
+        media /= arreglo.length;// Calculamos la media dividiendo la suma por la cantidad de elementos
+        System.out.println("Media: "+ media);
+        System.out.print("Mayores que la media: ");
+        for(int numero: arreglo){
+            if(numero>media){
+                System.out.print(numero+"");
+            }
+        }
+        System.out.print("\nMenores que la media: ");
+        for(int numero: arreglo){
+            if(numero<media){
+                System.out.print(numero+"");
+        
+            }
+
+        }
+        */
+
+        
+         /*/
+        //Ejercicio 15: Encontrar el trabajor con el sueldo mas cercano al promedio
+       
+        String[] nombres = { "Messi", "Ronaldo", "Neymar", "Petro"};// Nombre de los trajadores
+        int[] sueldos= { 1000, 1200,1100,1300};// Sueldo de los trabajadores
+        int suma =0;
+        for(int sueldo: sueldo){
+            suma += sueldo;
+        }
+        double promedio = (double) suma/ sueldo.length; // Operacion para hallar el promedio 
+        System.out.println("Sueldo promedio: "+ promedio);
+        double diferenciaMinima= Double.MAX_VALUE; //Inicializamos con el valor posible 
+        for(int sueldo: sueldo){
+            double diferencia = Math.abs(sueldo-promedio);// Calculamos la diferencia en el promedio
+            if( diferencia< diferenciaMinima){
+                diferenciaMinima=diferencia;
+            }
+        }
+        System.out.print(" Trabajadores con sueldos mas cercanos al promedio: ");
+        for(int i=0 i<sueldos.length; i++){
+            if(Math.abs(sueldos[i]-promedio)==diferenciaMinima){
+                System.out.print(nombres[i]+"");
+            }
+        }
+        */
+    
+
+
+    // Ejercicio 16: Informacion de profesores
+   
+        String[]profesores= {"Ana", "Carlos","Marta","Luis"};
+        int[] edades={ 45,30,50,40};
+        int menor= edades [0], mayor= edades[0];
+        String profesorMenor= profesores[0], profesorMayor= profesores[0];
+        int suma= 0;
+        // Recorremos el arreglo de edades para calcular la suma y encontrar el profesor más joven y más viejo
+        for(int i=0; i < edades.length; i++){
+            suma += edades[i];
+            if(edades [i]< menor){ // Si la edad actual es menor que la menor registrada
+                menor= edades[i];
+                profesorMenor = profesores[i];
+            
+            }
+            if(edades [i]> mayor){ 
+                menor= edades[i];
+                profesorMayor = profesores[i];
+            
+            }
+        }
+        // Calculamos el promedio de las edades
+        double promedio = (double)suma/edades.length;
+        System.out.println("Edad promedio: " + promedio);
+        System.out.println("Profesor mas joven: " + profesorMenor + " (" menor + "años)" );
+        System.out.println("Profesor con mayor edad: " + profesorMayor + " (" mayor + "años)" );
+    
+
 
 
 
 
     
     }
-    
-}    
+
+}
