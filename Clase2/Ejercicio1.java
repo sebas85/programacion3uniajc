@@ -256,7 +256,7 @@ public class Ejercicio1 {
        
         //ejercicio15
           // Crear el objeto para acceder a la clase MetodosArreglos
-        MetodosArreglos obj = new MetodosArreglos();
+            MetodosArreglos obj = new MetodosArreglos();
 
         String[] nombres = { "Alan", "Devora", "Miguel", "Sandra", "Diego" };
         int[] sueldos = { 100, 200, 150, 300, 100 };

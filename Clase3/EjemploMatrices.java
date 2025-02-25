@@ -50,6 +50,7 @@ public class EjemploMatrices {
 
         //EJERCICIO 18
          
+        /*/
 
         int[][] tMultiplicar= new int [10][10];         // Crea una matriz de 10x10 para almacenar la tabla de multiplicar 
 
@@ -68,6 +69,67 @@ public class EjemploMatrices {
             System.out.println(); // Nueva línea para para separar cada fila
         }
 
+        */
+
+
+
+        /*/
+        //EJERCICIO 18
+        
+        // Definir el tamaño de la matriz (n x m)
+        int nFilas = 5;     // Número de filas
+        int mColumnas = 5;  // Número de columnas
+         
+        int [][] mt = new int[5][5];          // Crear una matriz de tamaño n x 
+
+        for(int i = 0;i < nFilas; i++){
+            for(int j = 0; j < mColumnas; j++){
+
+                if(i==j){            // Si estamos en la diagonal principal    
+                    mt[i][j] = 1;    // Asignar 1
+                }else{
+                    mt[i][j] = 0;
+                }
+                
+            }
+        }
+       
+        //Imprimir la matriz 
+        System.out.println("Matriz con diagonal 1:");
+        for (int i = 0; i < nFilas; i++) {
+            for (int j = 0; j < mColumnas ; j++) {
+
+                System.out.print(mt[i][j] + " "); // Imprimir cada elemento, con un espacio
+            }
+            System.out.println(); // Nueva línea para separar las filas
+        }
+         */
+
+
+
+
+       //EJERCICIO 20
+
+       int [][] ma = new int [10][10];   //Se crea la matriz con valor definido    
+
+
+       for(int i = 0; i < 10; i++){
+            for(int j = 0; j < 10; j++){
+                if(j > i){               // Si estamos por encima de la diagonal principal
+                    ma[i][j] = 0;        //Asignar 0
+                }else{
+                    ma[i][j] = 8;
+                }
+            }
+       }
+
+       System.out.println("Matriz ceros hacia arriba");
+       for(int i = 0; i < 10; i++){
+            for(int j = 0; j < 10; j++){
+                System.out.print( ma[i][j] + " ");
+            }
+            System.out.println();
+        }
 
 
 
@@ -78,6 +140,9 @@ public class EjemploMatrices {
     }
 
 }      
+
+
+
 
 
 
