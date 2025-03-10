@@ -10,7 +10,7 @@ public class Prueba1 {
             String cad="";
 
             for(int i =0; i<a.length; i++){
-                if(a[i]%2== 0){
+                if(a[i]%2 == 0){
                     sumaPares += a[i];
                 }else{
                     sumaImpares += a[i];

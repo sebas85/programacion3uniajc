@@ -74,7 +74,7 @@ public class EjemploMatrices {
 
 
         /*/
-        //EJERCICIO 18
+        //EJERCICIO 19
         
         // Definir el tamaño de la matriz (n x m)
         int nFilas = 5;     // Número de filas
@@ -107,6 +107,7 @@ public class EjemploMatrices {
 
 
 
+         
 
        //EJERCICIO 20
 
