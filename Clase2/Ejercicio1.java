@@ -3,7 +3,7 @@ package Clase2;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import Clase3.MetodosArreglos;
+//import Clase3.MetodosArreglos;
 
 public class Ejercicio1 {
 
@@ -253,7 +253,7 @@ public class Ejercicio1 {
  
        */
 
-       
+       /*/
         //ejercicio15
           // Crear el objeto para acceder a la clase MetodosArreglos
             MetodosArreglos obj = new MetodosArreglos();
@@ -264,7 +264,8 @@ public class Ejercicio1 {
         System.out.println(obj.nombresSueldos(nombres, sueldos));
 
 
-        /*/ Ejercicio 12: Encontrar las pocisiobes de un numero en un arreglo
+
+        Ejercicio 12: Encontrar las pocisiobes de un numero en un arreglo
     
     
             int[]arreglo = { 4,6,8,2,6,9,6,1};
@@ -274,11 +275,9 @@ public class Ejercicio1 {
                 if(arreglo[i]==numeroBuscado){
                     System.out.print((i+1)+"");
                 }
-            }
-            */
-    
-            
-        /*/Ejercicio 13: Separar numeros mayores y menores que la media de un arreglo
+            }  
+        
+        Ejercicio 13: Separar numeros mayores y menores que la media de un arreglo
     
         int[]arreglo= {5,8,12,3,7,10};
         double media=0;
@@ -331,7 +330,7 @@ public class Ejercicio1 {
         */
     
 
-
+        /*/
     // Ejercicio 16: Informacion de profesores
    
         String[]profesores= {"Ana", "Carlos","Marta","Luis"};
@@ -359,6 +358,11 @@ public class Ejercicio1 {
         System.out.println("Profesor mas joven: " + profesorMenor + " (" menor + "años)" );
         System.out.println("Profesor con mayor edad: " + profesorMayor + " (" mayor + "años)" );
     
+
+
+
+         */
+
 
 
 
