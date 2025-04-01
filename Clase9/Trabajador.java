@@ -9,7 +9,7 @@ public class Trabajador{
     private double salario;   
     
     public Trabajador(String cedula, String nombre, double salario){
-        this.cedula = 
+        this.cedula = cedula.
     }
 
     
