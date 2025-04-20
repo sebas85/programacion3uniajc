@@ -26,4 +26,33 @@ public class Ejercicio {
 
     }
 
+    public static class Ejercicio7 {
+        public static void main(String[] args) {
+
+            Stack<String> letras = new Stack<>();
+
+            letras.push("zorro");
+            letras.push("oso");
+            letras.push("gato");
+
+            System.out.println("Pila Original: " + letras);
+
+            while (!letras.isEmpty()) {
+
+                String palabra = letras.pop(); //quita las cima de la pila
+
+                if (palabra.length() == 4) {     //si el tamano de la pabra es igual 4
+                    System.out.println("4:" + palabra);
+                } else if (palabra.length() < 4) {
+                    System.out.println("3: " + palabra);
+                }else{
+                    System.out.println("Pila esta vacia");
+                }
+             
+            }
+
+        }
+
+    }
+
 }
